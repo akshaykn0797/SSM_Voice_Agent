@@ -5,7 +5,7 @@ A comprehensive testing suite for evaluating Speech-to-Text (STT) technologies i
 ## Repository Contents
 
 ### 1. SSM-Based Voice Agent (Main Application)
-Located in `/maptest/` - A production-ready Next.js voice agent application powered by Cartesia AI for customer service interactions.
+Located in `/main/` - A production-ready Next.js voice agent application powered by Cartesia AI for customer service interactions.
 
 **Features:**
 - Real-time voice conversations with AI agents
@@ -14,7 +14,7 @@ Located in `/maptest/` - A production-ready Next.js voice agent application powe
 - Customer service metrics dashboard
 - Webhook integration for call tracking
 
-**See:** [maptest/README.md](maptest/README.md) for complete documentation.
+**See:** [main/README.md](main/README.md) for complete documentation.
 
 ### 2. Legacy STT Comparison Tool
 Simple web-based tool for comparing two STT technologies side-by-side.
@@ -29,7 +29,7 @@ Simple web-based tool for comparing two STT technologies side-by-side.
 
 ```
 SSM Voice Agent Repository/
-├── maptest/                    # Main SSM-based voice agent application
+├── main/                    # Main SSM-based voice agent application
 │   ├── app/                   # Next.js application
 │   ├── server.js              # WebSocket server
 │   ├── package.json           # Dependencies
@@ -49,12 +49,12 @@ SSM Voice Agent Repository/
 
 ### For SSM-Based Voice Agent (Recommended)
 
-1. Navigate to the maptest directory:
+1. Navigate to the main directory:
 ```bash
-cd maptest
+cd main
 ```
 
-2. Follow the installation and setup instructions in [maptest/README.md](maptest/README.md)
+2. Follow the installation and setup instructions in [main/README.md](main/README.md)
 
 3. Configure your Cartesia API credentials in `.env.local`
 
@@ -95,7 +95,7 @@ Store your audio test files here. Supported formats:
 
 ## Technologies
 
-### Modern Voice Agent (maptest/)
+### Modern Voice Agent (main/)
 - Next.js 16 with App Router
 - React 19
 - TypeScript
@@ -117,10 +117,10 @@ Store your audio test files here. Supported formats:
 
 ## Documentation
 
-- [SSM Voice Agent Documentation](maptest/README.md) - Complete setup and usage guide
+- [SSM Voice Agent Documentation](main/README.md) - Complete setup and usage guide
 - [Setup Guide](SETUP.md) - Detailed configuration instructions
-- [Voice Call Setup](maptest/VOICE_CALL_SETUP.md) - Voice call configuration
-- [Webhook Setup](maptest/WEBHOOK_SETUP.md) - Webhook integration guide
+- [Voice Call Setup](main/VOICE_CALL_SETUP.md) - Voice call configuration
+- [Webhook Setup](main/WEBHOOK_SETUP.md) - Webhook integration guide
 
 ## License
 
@@ -129,6 +129,6 @@ This project is proprietary. All rights reserved.
 ## Support
 
 For issues related to:
-- **SSM Voice Agent**: See [maptest/README.md](maptest/README.md)
+- **SSM Voice Agent**: See [main/README.md](main/README.md)
 - **Cartesia API**: Visit [Cartesia Documentation](https://docs.cartesia.ai)
 - **General Issues**: Open an issue in the project repository
