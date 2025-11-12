@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSM-Based STT Testing</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SSM-Based STT Testing</h1>
+            <p class="subtitle">Speech-to-Text Technology Comparison for Customer Service</p>
+        </header>
+
+        <main>
+            <!-- Audio Player Section -->
+            <section class="audio-section">
+                <h2>Audio Playback</h2>
+                <div class="audio-player">
+                    <audio id="audioPlayer" controls>
+                        <source id="audioSource" src="" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div class="audio-controls">
+                        <input type="file" id="audioFileInput" accept="audio/*">
+                        <button id="loadAudioBtn">Load Audio</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Metrics Overview -->
+            <section class="metrics-overview">
+                <div class="metric-card">
+                    <h3>STT Technology 1</h3>
+                    <div class="metric-item">
+                        <span class="metric-label">Status:</span>
+                        <span class="metric-value" id="stt1-status">Ready</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">Processing Time:</span>
+                        <span class="metric-value" id="stt1-time">0ms</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">Accuracy:</span>
+                        <span class="metric-value" id="stt1-accuracy">N/A</span>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <h3>STT Technology 2</h3>
+                    <div class="metric-item">
+                        <span class="metric-label">Status:</span>
+                        <span class="metric-value" id="stt2-status">Ready</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">Processing Time:</span>
+                        <span class="metric-value" id="stt2-time">0ms</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">Accuracy:</span>
+                        <span class="metric-value" id="stt2-accuracy">N/A</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Comparison Section -->
+            <section class="comparison-section">
+                <div class="transcription-panel">
+                    <div class="panel-header">
+                        <h3>STT Technology 1</h3>
+                        <button class="process-btn" id="processStt1">Process</button>
+                    </div>
+                    <div class="transcription-content" id="transcription1">
+                        <p class="placeholder">Transcription will appear here...</p>
+                    </div>
+                </div>
+
+                <div class="transcription-panel">
+                    <div class="panel-header">
+                        <h3>STT Technology 2</h3>
+                        <button class="process-btn" id="processStt2">Process</button>
+                    </div>
+                    <div class="transcription-content" id="transcription2">
+                        <p class="placeholder">Transcription will appear here...</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer style="text-align: center; padding: 20px; color: #666; font-size: 0.9em;">
+            <p>For the modern voice agent, see <a href="maptest/README.md" style="color: #1976d2;">SSM-Based Voice Agent Documentation</a></p>
+        </footer>
+    </div>
+
+    <script src="src/js/app.js"></script>
+</body>
+</html>
